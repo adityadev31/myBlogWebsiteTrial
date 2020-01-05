@@ -1,0 +1,544 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* F O N T S */
+
+/* font-family: 'Long Cang', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Sedgwick Ave', cursive; */
+
+
+
+/* B A N N E R  */
+
+.MyBanner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.BannerBox{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(rgba(182, 5, 5, 0.747), rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url("All_Images/MyUploads/myCool_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.bannerCover{
+    position: absolute;
+    top: 55vh;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1));
+    transform:  skewY(-45deg);
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+}
+.BannerText{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.Bannerbox1{
+    width: 100vw;
+    color: rgba(255, 255, 255, 0.842);
+    letter-spacing: 3px;
+    position: absolute;
+    top: 62vh;
+}
+.Bannerbox1 h2{
+    position: absolute;
+    right: 10vw;
+    font-size: 4rem;
+    text-shadow: 5px 4px 2px rgb(0, 0, 0);
+    font-family: cursive;
+    /* font-family: 'Courgette', cursive; */
+}
+.Bannerbox1 h2 {
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+  }
+.Bannerbox2{
+    width: 100vw;
+    height: 70px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+}
+.Bannerbox2 img{
+    height: 100%;
+    position: absolute;
+    right: 10vw;
+    opacity: 0.3;
+}
+
+
+
+/* L O G O - B A R  */
+
+.logoBar{
+    width: 100vw;
+    height: 40px;
+    z-index: 99;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky !important;
+    position: -webkit-sticky !important; /* Safari */
+    top: 0px;
+    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.3), 0px 8px 8px 0px rgba(0,0,0,0.2);
+}
+.logoBox, .logoBox a{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoBox a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.logoBox img{
+    height: 100%;
+}
+
+
+
+
+
+/* A B O U T */
+
+.aboutMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.aboutbox{
+    width: 90%;
+    padding: 30px 15px;
+    overflow: hidden;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,2), 0px 12px 20px 0px rgba(0,0,0,0.19);
+}
+.aboutbox h3{
+    /* font-family: 'Long Cang', cursive; */
+    /* font-family: 'Indie Flower', cursive; */
+    /* font-family: 'Caveat', cursive; */
+    /* font-family: 'Permanent Marker', cursive; */
+    /* font-family: 'Courgette', cursive;  */
+    font-family: 'Kalam', cursive;
+    color: rgb(73, 73, 73);
+    letter-spacing: 2px;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+.aboutbox p{
+    /* font-family: 'Long Cang', cursive; */
+    /* font-family: 'Indie Flower', cursive; */
+    /* font-family: 'Caveat', cursive; */
+    /* font-family: 'Permanent Marker', cursive; */
+    /* font-family: 'Courgette', cursive;  */
+    font-family: 'Kalam', cursive;
+    color: rgb(158, 158, 158);
+}
+.aboutbox p #H{
+    font-size: 30px;
+    color: orangered;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+
+#more, #more2{
+    display: none;
+}
+
+
+
+/* ALERT BOX */
+.alert{
+    z-index: 2;
+}
+
+
+
+
+/* I N S T A - B A N N E R */
+.instaBanner{
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2), 0px 0px 15px 0px rgba(0,0,0,0.19);
+}
+.instaBannerBox{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.instaBanner .circularLogo{
+    width: 20%;
+    height: 20vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% 50%;
+}
+.instaBanner .circularLogo img{
+    width: 25vw;
+}
+.instaBanner .instaLogo{
+    width: 40%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instaBanner .instaLogo img{
+    width: 100%;
+}
+.instaBanner .instaBanFollBtn{
+    width: 20%;
+    font-size: 3vw;
+}
+
+
+
+/* U P L O A D  -  P O S T (Image - left) */
+.postSection{
+    padding: 0;
+    width: 100vw;
+    height: 50vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.postSection .bookmarkIcon{
+    position: absolute;
+    top: -1.5%;
+    left: 0;
+    width: 10vw;
+    z-index: 3;
+}
+.postSection .descHeading{
+    position: absolute;
+    top: 4.5%;
+    left: 58%;
+    z-index: 2;
+    font-size: 6vw;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+.postSection .imgSection{
+    width: 35vw;
+    height: 43vw;
+    margin: 0;
+    box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.2), 0px 0px 6px 4px rgba(0,0,0,0.19);
+    background-color: rgba(255, 68, 0, 0.568);
+    z-index: 2;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    /* width = 35vw  and   height = 35vw + 8vw = 43vw  */
+}
+.postSection .imgSection img{
+    width: 100%;
+    z-index: 2;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) all 0.4s;
+    /* width = 35vw  and   height = 35vw   */
+}
+.postSection .imgSection img:hover{
+    transform: scale(2);
+}
+
+/* L I K E - P A N E L */
+.postSection .imgSection .likePanel{
+    width: 100%;
+    height: 8vw;
+    background-color: white;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 3;
+    /* width = 35vw  and   height = 8vw   */
+}
+.postSection .imgSection .likePanel a{
+    text-decoration: none;
+    color: white;
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.postSection .imgSection .likePanel a:hover{
+    text-shadow: 2px 2px 2px black;
+}
+.postSection .imgSection .likePanel .like:hover{
+    color: red;
+}
+.postSection .imgSection .likePanel .comment:hover{
+    color: rgb(69, 245, 16);
+}
+.postSection .imgSection .likePanel .share:hover{
+    color: rgb(0, 255, 255);
+}
+
+/* D E S C R I P T I O N   P A N E L  */
+.postSection .descSection{
+    width: 60vw;
+    height: 40vw;
+    margin: 0;
+    padding-top: 10%;
+    padding-right: 4%;
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 175, 26, 0.507),rgba(255, 175, 26, 0.658));
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.19);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-radius: 0% 0% 10% 0%;
+}
+.postSection .descSection p{
+    margin-left: 6%;
+    font-size: 3vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    mix-blend-mode: overlay;
+}
+.postSection .descSection p span{
+    margin-right: 3%;
+}
+.postSection .descSection p .location{
+    margin-left: 1.5%;
+    margin-right: 4%;
+}
+
+
+
+
+
+
+/* U P L O A D  -  P O S T (Image - Right) */
+.postSection2{
+    padding: 0;
+    width: 100vw;
+    height: 50vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.postSection2 .bookmarkIcon{
+    position: absolute;
+    top: -1.5%;
+    right: 5%;
+    width: 10vw;
+    z-index: 3;
+    transform: rotateY(180deg);
+}
+.postSection2 .descHeading{
+    position: absolute;
+    top: 4.5%;
+    left: 22%;
+    z-index: 2;
+    font-size: 6vw;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+.postSection2 .imgSection{
+    width: 35vw;
+    height: 43vw;
+    margin: 0;
+    box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.2), 0px 0px 6px 4px rgba(0,0,0,0.19);
+    background-color: rgba(255, 68, 0, 0.568);
+    z-index: 2;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    /* width = 35vw  and   height = 35vw + 8vw = 43vw  */
+}
+.postSection2 .imgSection img{
+    width: 100%;
+    z-index: 2;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) all 0.4s;
+    /* width = 35vw  and   height = 35vw   */
+}
+.postSection2 .imgSection img:hover{
+    transform: scale(2);
+}
+
+/* L I K E - P A N E L */
+.postSection2 .imgSection .likePanel{
+    width: 100%;
+    height: 8vw;
+    background-color: white;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 3;
+    /* width = 35vw  and   height = 8vw   */
+}
+.postSection2 .imgSection .likePanel a{
+    text-decoration: none;
+    color: white;
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.postSection2 .imgSection .likePanel a:hover{
+    text-shadow: 2px 2px 2px black;
+}
+.postSection2 .imgSection .likePanel .like:hover{
+    color: red;
+}
+.postSection2 .imgSection .likePanel .comment:hover{
+    color: rgb(69, 245, 16);
+}
+.postSection2 .imgSection .likePanel .share:hover{
+    color: rgb(0, 255, 255);
+}
+
+/* D E S C R I P T I O N   P A N E L  */
+.postSection2 .descSection{
+    width: 60vw;
+    height: 40vw;
+    margin: 0;
+    padding-top: 10%;
+    padding-right: 4%;
+    background: linear-gradient(rgb(255, 255, 255), rgba(167, 255, 26, 0.507),rgba(167, 255, 26, 0.658));
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-radius: 0% 0% 0% 10%;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.19);
+}
+.postSection2 .descSection p{
+    margin-left: 6%;
+    font-size: 3vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    mix-blend-mode: overlay;
+}
+.postSection2 .descSection p span{
+    margin-right: 3%;
+}
+.postSection2 .descSection p .location{
+    margin-left: 1.5%;
+    margin-right: 4%;
+}
+
+
+
+
+
+/* F U N   F A C T S */
+
+.factOuterMost{
+    width: 100vw;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.factBanner{
+    width: 100%;
+    margin-bottom: 20vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+    border-radius: 0vw 0vw 10vw 10vw;
+    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.5), 0px 8px 8px 0px rgba(0,0,0,0.3);
+}
+.factBanner h4{
+    font-family: 'Courgette', cursive;
+    font-size: 10vw;
+}
+ .bulb{
+    width: 22vw;
+    margin-bottom: 5vw;
+}
+.factSlider{
+    min-height: 50vw;
+    overflow: hidden;
+}
+.factSliderPanel{
+    min-height: 80vh;
+    background: url("All_Images/MyUploads/background_images/facts_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/* M E S S A G E S */
+
+.messageHead{
+    font-family: 'Courgette', cursive;
+}
+.messageHead h4{
+    font-size: 10vw;
+}
+.messageBox{
+    padding: 0% 5%;
+    color: rgb(158, 158, 158);
+}
+.messageBox p{
+    margin-bottom: 11%;
+}
+
