@@ -502,12 +502,9 @@ font-family: 'Sedgwick Ave', cursive; */
     width: 22vw;
     margin-bottom: 5vw;
 }
-.factSlider{
-    min-height: 50vw;
+.factSlider{               /* SCREEN WIDTH BASE*/
+    height: 200vw;
     overflow: hidden;
-}
-.factSliderPanel{
-    min-height: 80vh;
     background: url("All_Images/MyUploads/background_images/facts_bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -516,6 +513,87 @@ font-family: 'Sedgwick Ave', cursive; */
     -webkit-filter: blur(8px);
     z-index: 1;
 }
+.factSlider.active{
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)), url("All_Images/MyUploads/background_images/facts_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.factSliderPanel{               /*LONG ONE*/
+    width: 160vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: cubic-bezier(0.02, 1.36, 0.63, 1.3) 0.8s;
+}
+.factSliderPanel.active{
+    transform: translateX(-65vw);
+}
+
+
+
+.factSlider1{                   
+    height: 190vw;
+    width: 80vw;
+    background-color: white;
+    z-index: 2;
+    border-radius: 0vw 0vw 6vw 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw;
+    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.5), 0px 8px 8px 0px rgba(0,0,0,0.3);
+}
+.factSlider2{                   
+    height: 190vw;
+    width: 80vw;
+    background-color: none;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 10vw;
+}
+.factList{
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.factList p{
+    color: rgb(24, 24, 24);
+    font-size: 4.5vw;
+}
+.Bullets{
+    font-size: 3vw;
+    margin-right: 1vw;
+    color: rgba(53, 53, 53, 0.712);
+}
+
+/* fact buttons */
+.factBtnBox1{
+    position: absolute;
+    left: 36vw;
+    bottom: 15vw;
+    color: rgb(3, 119, 197);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.904);
+    font-size: 10vw;
+    z-index: 5;
+    transition: cubic-bezier(0.02, 1.36, 0.63, 1.3) 2s;
+}
+.factBtnBox1.active{
+    color: red;
+    transform: rotateY(180deg) translateX(-10vw);
+
+}
+
 
 
 
