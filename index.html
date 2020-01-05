@@ -193,17 +193,23 @@
         </div>
 
         <!-- fact slider -->
-        <div class="factSlider">
-            <div class="factSliderPanel">
-                <div class="factSlider1"></div>
-                <div class="factSlider2"></div>
+        <div class="factSlider"></div>
+
+        <!-- fact slider panel -->
+        <div class="factSliderPanel">
+            <div class="factSlider1">
+                <div class="factList">
+                    <p class="mb-4"><span class="Bullets"><i class="fa fa-circle" aria-hidden="true"></i></span class="Bullets"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eveniet, consequatur maiores necessitatibus vel possimus </p>
+                    <p class="mb-4"><span class="Bullets"><i class="fa fa-circle" aria-hidden="true"></i></span class="Bullets"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eveniet, consequatur maiores necessitatibus vel possimus </p>
+                    <p><span class="Bullets"><i class="fa fa-circle" aria-hidden="true"></i></span class="Bullets"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eveniet, consequatur maiores necessitatibus vel possimus </p>
+                </div>
             </div>
+            <div class="factSlider2"></div>
         </div>
 
         <!-- fact buttons -->
-        <div class="factBtnBox">
-            <div class="factBtn1"></div>
-            <div class="factBtn2"></div>
+        <div class="factBtnBox1">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
     </div>
 
@@ -218,7 +224,7 @@
 
     <!-- M E S S A G E S -->
 
-    <div class="container-fluid pt-3 pb-5 text-center messageHead"> <h4>Suggestions</h4> </div>
+    <div class="container-fluid pt-5 pb-5 text-center messageHead"> <h4>Suggestions</h4> </div>
 
     <div class="container Messages">
         <div class="messageBox">
@@ -249,6 +255,23 @@
     <script>    
         AOS.init();
     </script>
+
+
+
+    <!-- F U N   F A C T S -->
+    <script>
+        $(document).ready(function(){
+            $('.factBtnBox1').click(function(){
+                $('.factBtnBox1').toggleClass('active');
+                $('.factSliderPanel').toggleClass('active');
+                $('.factSlider').toggleClass('active');
+            });
+        })
+    </script>
+
+
+
+
 
     <!-- F E E D B A C K -->
     <script>
